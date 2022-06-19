@@ -47,7 +47,9 @@ namespace DataAccess.Concrete.InMemory
             return _cars;
         }
 
+#pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
         public List<Car> GetAll(Expression<Func<Car, bool>> filter = null)
+#pragma warning restore CS8625 // Cannot convert null literal to non-nullable reference type.
         {
             throw new NotImplementedException();
         }
