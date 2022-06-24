@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Entities.Abstract
+namespace Core.Entities
 {
     // katmanlar arası iletişimde bağımlılık oluşturmamak için boş bir interface oluşturuyorum.
     public interface IEntity

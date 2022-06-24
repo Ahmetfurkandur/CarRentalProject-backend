@@ -10,13 +10,7 @@ namespace ConsoleUI
         static CarManager _carManager = new CarManager(new EfCarDal());
         static void Main(string[] args)
         {
-            GetAll();
-            Console.WriteLine("******************************** \n");
-            GetCarsByBrandId();
-            Console.WriteLine("******************************** \n");
-            GetCarsByColorId(); 
-            Console.WriteLine("******************************** \n");
-            Add();
+           
         }
 
         private static void GetCarsByBrandId()
