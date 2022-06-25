@@ -7,11 +7,11 @@ namespace ConsoleUI
 {
     internal class Program
     {
-        //static CarManager _carManager = new CarManager(new EfCarDal());
+        
         static void Main(string[] args)
         {
             //GetAllColors();
-
+            CarDetailTest();
             //BrandTest();
         }
 
@@ -58,13 +58,14 @@ namespace ConsoleUI
 
         //}
 
-        //static void GetAll()
-        //{
-        //    foreach (var car in _carManager.GetAll())
-        //    {
-        //        Console.WriteLine("Car List: " + car.Id + " " + car.ModelYear + " " + car.DailyPrice + " " + car.Description);
-        //    }
-        //}
+        static void CarDetailTest()
+        {
+            CarManager _carManager = new CarManager(new EfCarDal());
+            foreach (var car in _carManager.GetCarDetails())
+            {
+                Console.WriteLine("Car List: " + car.CarName + " " + car.BrandName + " " + car.DailyPrice + " " + car.ColorName);
+            }
+        }
 
         //static void Add()
         //{
