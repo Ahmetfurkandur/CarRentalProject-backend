@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Concrete.EntityFramework
 {
-    public class EfBrandDal : EfEntityRepositoryBase<Car, CarRentalDBContext>, IBrandDal
+    public class EfBrandDal : EfEntityRepositoryBase<Brand, CarRentalDBContext>, IBrandDal
     {
     }
 }
