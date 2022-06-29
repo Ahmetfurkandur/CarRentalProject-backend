@@ -1,7 +1,8 @@
 ﻿using Business.Concrete.Managers;
 using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
-using Entities.Concrete;
+//using Entities.Concrete;
+using System.Drawing;
 
 namespace ConsoleUI
 {
@@ -11,8 +12,9 @@ namespace ConsoleUI
         static void Main(string[] args)
         {
             //GetAllColors();
-            CarDetailTest();
+            //CarDetailTest();
             //BrandTest();
+
         }
 
         private static void BrandTest()
