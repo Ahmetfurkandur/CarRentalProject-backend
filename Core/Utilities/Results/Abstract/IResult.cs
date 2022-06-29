@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace Core.Utilities.Results.Abstract
 {
     //Voidler için kullanılacak
-    internal interface IResult
+    public interface IResult
     {
         bool Success { get; }
         string Message { get; }
